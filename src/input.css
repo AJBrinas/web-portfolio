@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.about{
+body {
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 0; /* Remove default margin */
+    padding-top: 60px; /* Adjust padding to account for the fixed header height */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10-px;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#about {
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+    max-width: 96rem;
+    align-content: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 0.2rem;
 }
